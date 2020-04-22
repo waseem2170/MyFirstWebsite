@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+ header{
+        width: 100%;
+            height: 60px;
+            background-color: #fff;
+        box-sizing: border-box;
+    }
+
+    nav{
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        border-top: 1px;
+        position: sticky;
+    }
+    
+    nav p{
+        font-family: arial;
+        color: #222;
+        font-size: 24px;
+        line-height: 55px;
+        float: left;
+        padding: 0px 20px;
+    }
+    
+    nav ul{
+        float: left;
+        display: flex;
+        margin: 0;
+        padding: 0 20px;
+        background-color: #fff;
+        position: sticky;
+        width: 100px;
+    }
+    
+    nav ul li{
+        float: left;
+        list-style: none;
+        position: relative;
+    }
+
+    nav ul li a:hover{
+        background-color:  #4CAF50;
+    }
+
+
+    nav ul li a{
+        display: block;
+        font-family: arial;
+        color: #222;
+        font-size: 14px;
+        padding: 21px 14px;
+        text-decoration: none;
+    }
+    
+    nav ul li ul{
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 0px 0px 10px 10px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    
+    nav ul li:hover ul{
+        display: block;      
+    }
+    
+    nav ul li ul li a{
+        padding: 10px 14px;
+    }
+    
+    nav ul li ul li{
+        width: 180px;
+        border-radius: 1px;
+        background-color: #fff;
+        text-align: center;
+    }
+    
+    nav ul li ul li a:hover{
+        background-color: #4CAF50;
+    }
+
+    #li-Login{
+        background-color: green;
+    }
+
+    </style>
+</head>
+<body>
+<header>
+        <nav>
+            <a href="../Main/LetsHack.html"><p>LetsHAck</p></a>
+            <ul>
+                <li><a href="../Main/LetsHack.html">Home</a></li>
+                <li>
+                    <a href="#">Methods</a>
+                    <ul>
+                        <li><a href="Snooping&Sniffing.html">Snooping & Sniffing</a></li>
+                        <li><a href="#">Handshake decyption</a></li>
+                        <li><a href="#">Man in the middle</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="li-Login"><a href="#">Login</a></li>
+            </ul>
+        </nav>   
+</header>
+</body>
+</html>

@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+       background-color: black;
+    }
+    
+    nav{
+        width: 100%;
+        height: 62px;
+        background-color: #fff;
+        border-top: 1px;
+        position: sticky;
+    }
+    
+    nav p{
+        font-family: arial;
+        color: #222;
+        font-size: 24px;
+        line-height: 55px;
+        float: left;
+        padding: 0px 20px;
+    }
+    
+    nav ul{
+        float: left;
+        display: flex;
+        margin: 0;
+        padding: 0 20px;
+        background-color: #fff;
+        position: sticky;
+        width: 100px;
+    }
+    
+    nav ul li{
+        float: left;
+        list-style: none;
+        position: relative;
+    }
+
+    nav ul li a:hover{
+        background-color:  #4CAF50;
+    }
+
+
+    nav ul li a{
+        display: block;
+        font-family: arial;
+        color: #222;
+        font-size: 14px;
+        padding: 21px 14px;
+        text-decoration: none;
+    }
+    
+    nav ul li ul{
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 0px 0px 10px 10px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    
+    nav ul li:hover ul{
+        display: block;      
+    }
+    
+    nav ul li ul li a{
+        padding: 10px 14px;
+    }
+    
+    nav ul li ul li{
+        width: 180px;
+        border-radius: 1px;
+        background-color: #fff;
+        text-align: center;
+    }
+    
+    nav ul li ul li a:hover{
+        background-color: #4CAF50;
+    }
+
+    #li-Login{
+        background-color: green;
+    }
+
+    p, h1{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p1 {
+        text-align: left;
+    }
+
+    img{
+        width: auto;
+        height: auto;
+        padding: 0px 100px 0px 250px;
+    }
+
+    .scrolling-box {
+    background-image: url("../img/bg6.jpg") ;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    padding: 1em;
+    overflow-y: scroll;
+    text-align: center;
+    }
+
+    section {
+    width: 100%;
+    height: 100vh;
+    }
+
+    header{
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+      section.sec1 h1{
+        font-size: 3em;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding: 0px 0px 0px 80px;
+    }
+
+    table tr th h1{
+        padding: 0px 80px 0px 80px;
+        text-align: center;
+    }
+    .sec1 p{
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding:0px 100px 0px 100px;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .sec1 ul li{
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding:0px 100px 0px 100px;
+        box-sizing: border-box;
+        height: auto;
+        color: #fff;
+        list-style: circle;
+    }
+
+    .id_h1{
+        font-size: 3em;
+        margin: 0;
+        padding: 0px 0px 0px 80px;
+    }
+
+    .sec2 h1{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+        color: black;
+        font-size: 3em;
+        margin: 0;
+        padding: 0px 0px 0px 80px;
+    }
+
+    .sec2 {
+        padding: 100px;
+        font-family: arial;
+        box-sizing: border-box;
+        height: auto;
+        background-color: #fff;
+        background-position: center;
+        background-size: cover;
+        color: black;
+    }
+
+    .sec2 p{
+        padding: 0px 100px 20px 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+        height: auto;
+        background-color: #fff;
+        background-position: center;
+        background-size: cover;
+        color: black;
+    }
+
+    .sec2 ul {
+        padding-left: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+        height: auto;
+        background-color: #fff;
+        background-position: center;
+        background-size: cover;
+        color: black;
+    }
+
+     /*LOGIN CSS*/
+    
+     .modal-login .avatar {
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: -70px;
+		width: 95px;
+		height: 95px;
+		border-radius: 50%;
+        z-index: 9;
+        background-image: url(../img/login.png);
+		padding: 15px;	
+    }
+    
+    .modal-login .modal-title{
+        text-align: center;
+        font-size: 40px;
+    }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style_snooping.css">
+    <title>Snooping&Sniffing</title>
+
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="../Main/LetsHack.html"><p>LetsHAck</p></a>
+        <ul>
+            <li><a href="../Main/LetsHack.html">Home</a></li>
+            <li>
+                <a href="#">Methods</a>
+                <ul>
+                    <li><a href="Snooping&Sniffing.html">Snooping & Sniffing</a></li>
+                    <li><a href="../Payload/payload.html">Payload Metasploit</a></li>
+                    <li><a href="#">Handshake decyption</a></li>
+                    <li><a href="#">Man in the middle</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="li-Login">
+                <div class="text-center">
+                    <!-- Button HTML (to Trigger Modal) -->
+                    <a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a>
+                </div>
+            </li>
+        </ul>
+    </nav>   
+    </header> 
+
+<!-- Modal HTML LOGIN-->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="avatar">
+					<img src="/examples/images/avatar.png" alt="Avatar">
+				</div>				
+				<h4 class="modal-title">Login</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="/examples/actions/confirmation.php" method="post">
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+					</div>        
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>
+		</div>
+	</div>
+</div>     
+
+<section class="sec1"> </section>
+<br>
+    <section class="sec2">
+        <div>
+    <h1>Snooping and Sniffing</h1>
+    <br>
+    <br>
+    <p>When you want to read a page on a website then your device will make a connection to the webserver to ask for the web page. It does that using a protocol called the HyperText Transfer Protocol (HTTP). On an open Wi-Fi router these requests and the responses can be seen by anyone who is listening. With wired networking then listening to the data packets zipping back and forth is more intrusive. However with wireless networking all that data is sent whizzing through the air, in every direction, for any Wi-Fi equipment to receive!</p>
+    <br>
+    <p>Normally a Wi-Fi adapter is set into “managed” mode which means it just acts as a client and connects to a single Wi-Fi router for access to the Internet. However, some Wi-Fi adapters can be set into other modes. For example, if I was configuring an access point (a hotspot) then the Wi-Fi needs to be set into “master” mode, more about that soon. Another mode is “monitor” mode. In “managed” mode a Wi-Fi network interface ignores all data packets except those specifically addressed to it. However in “monitor” mode the Wi-Fi adapter will capture all the wireless network traffic (on a certain Wi-Fi channel) regardless of the destination. In fact, in “monitor” mode the Wi-fi interface can capture packets without even being connected to any access point (router), it is a free agent, sniffing and snooping at all the data in the air!</p>
+    <br>
+    <p>Not all off-the-shelf Wi-Fi adapters can do this as it is cheaper for the manufacturers to make Wi-Fi chipsets that only handle “managed” mode, however there are some out there that can be placed into “monitor” mode. During my testing and research for this article I used the TP-Link TL-WN722N.</p>
+    <br>
+    <p>The easiest way to sniff Wi-Fi packets is to use a Linux distribution called Kali. You can also use the more standard distributions like Ubuntu, but you will need to install some of the tools yourself. If you don’t have Linux on a laptop then the good news is that Kali Linux can be used on a virtual machine like Virtual Box.</p>
+    <br>
+    <p>To capture the traffic we are going to use the aircrack-ng suite of tools, plus some others like driftnet, Wireshark and urlsnarf. There are plenty of tutorials out there about capturing traffic with aircrack-ng but here is the essence:</p>
+        </div>
+    </section>
+
+    <section class="sec4">
+        <p>First you need to find out the name of your wireless network adapter, it will probably be wlan0,</p> 
+        <p>check it run ifconfig and then to double check, run iwconfig:</p>
+        <br>
+        <img src="../img/bg_terminal.PNG" alt="Oops, something went wrong">
+        <br>
+        <br>
+        <p>Next put the card into “monitor” mode, as I mentioned before, not all adapters/cards support this, so you must make sure you are using a compatible adapter.</p>
+        <br>
+        <p>The command is: airmon-ng start wlan0</p>
+        <img src="../img/msfconsole3.png" alt="Oops, something went wrong">
+    </section>
+</body>
+
+</html>

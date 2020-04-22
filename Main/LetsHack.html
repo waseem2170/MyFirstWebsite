@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style_main.css">
+    <title>LetsHAck</title>
+
+</head>
+<body>
+<header>
+    <nav>
+        <a href="LetsHack.html"><p>LetsHAck</p></a>
+        <ul>
+            <li><a href="LetsHack.html">Home</a></li>
+            <li>
+                <a href="#">Methods</a>
+                <ul>
+                    <li><a href="../Snooping/Snooping&Sniffing.html">Snooping & Sniffing</a></li>
+                    <li><a href="../Payload/payload.html">Payload Metasploit</a></li>
+                    <li><a href="#">Handshake decyption</a></li>
+                    <li><a href="#">Man in the middle</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="li-Login">
+                <div class="text-center">
+                    <!-- Button HTML (to Trigger Modal) -->
+                    <a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a>
+                    </div>
+            </li>
+        </ul>
+    </nav>   
+</header>
+
+<!-- Modal HTML LOGIN -->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="avatar">
+					<img src="/examples/images/avatar.png" alt="Avatar">
+				</div>				
+				<h4 class="modal-title">Login</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="/examples/actions/confirmation.php" method="post">
+					<div class="form-group">
+						<input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+					</div>        
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>
+		</div>
+	</div>
+</div>     
+
+<section class="sec1">
+    <h1>Welcome!</h1>    
+</section>
+<br>
+    <section class="sec2">
+        <div>
+    <h1>Introduction to Ethical Hacking</h1>
+    <br>
+    <p>Ethical Hacking:
+        To crack passwords or to steal data? No, it is much more than that. Ethical hacking is to scan vulnerabilities and to find potential threats on a computer or networks. An ethical hacker finds the weak points or loopholes in a computer, web applications or network and reports them to the organization.</p>
+        <p>let’s explore more about Ethical Hacking step-by-step.</p>
+        <br>
+        <br>
+        <br>
+        <p style="text-align: left;">These are various types of hackers:</p>
+        <br>
+        <p style="text-align: left;">(1) White Hat Hackers (Cyber-Security Hacker)</p>
+        <p style="text-align: left;">(2) Black Hat Hackers (Cracker)</p>
+        <p style="text-align: left;">(3) Gray Hat Hackers (Both)</p>
+        <br>
+        </div>
+    </section>
+
+    <section class="sec3">
+        <p style="font-weight: bold;">Let’s summarize them one-by-one:</p>
+        <br>
+        <ol>
+            <li>White Hat Hackers:
+                <p>Here, we look for bugs and ethically report it to the organization. We are authorized as a user to test for bugs in a website or network and report it to them. White hat hackers generally get all the needed information about the application or network to test for, from the organization itself. They use their skills to test it before the website goes live or attacked by malicious hackers.</p>
+            </li>
+            <br>
+            <li>Black Hat Hackers:
+                <p>Here, the organization doesn’t allow the user to test it. They unethically enter inside the website and steal data from the admin panel or manipulate the data. They only focus on themselves and the advantages they will get from the personal data for personal financial gain. They can cause major damage to the company by altering the functions which lead to the loss of the company at a much higher extent. This can even lead you to extreme consequences.</p>
+            </li>
+            <br>
+            <li>Grey Hat Hackers:
+                <p>They sometimes access to the data and violates the law. But never have the same intention as Black hat hackers, they often operate for the common good. The main difference is that they exploit vulnerability publicly whereas white hat hackers do it privately for the company.</p>
+            </li>
+        </ol>
+    </section>
+</body>
+</html>
